@@ -1,0 +1,15 @@
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\bin\Debug\net6.0\FourInARoe.exe
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\bin\Debug\net6.0\FourInARoe.deps.json
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\bin\Debug\net6.0\FourInARoe.runtimeconfig.json
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\bin\Debug\net6.0\FourInARoe.dll
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\bin\Debug\net6.0\FourInARoe.pdb
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.csproj.AssemblyReference.cache
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.AssemblyInfoInputs.cache
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.AssemblyInfo.cs
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.csproj.CoreCompileInputs.cache
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.dll
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\refint\FourInARoe.dll
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.pdb
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\FourInARoe.genruntimeconfig.cache
+C:\Users\fbrinke\Documents\GitHub\FourInARoe\obj\Debug\net6.0\ref\FourInARoe.dll
