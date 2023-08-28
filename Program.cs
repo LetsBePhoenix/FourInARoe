@@ -1,4 +1,8 @@
-﻿internal class Program
+﻿using System;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
+
+internal class Program
 {
     public static int Player = 1;
     public static int[,] Field = new int[6, 7] { { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
@@ -7,9 +11,12 @@
     private static void Main(string[] args)
     {
         int ChosenLine;
+        SaveAndLoad();
         while (true)
         {
             Console.Clear();
+            Console.WriteLine("Player1: " + Player_win1);
+            Console.WriteLine("Player2: " + Player_win2 + "\n");
             ShowField();
             try
             {
@@ -65,6 +72,32 @@
             catch(Exception ex)
             { }
             TryWin(Player);
+        }
+    }
+    private static void SaveAndLoad()
+    {
+        string filePath = "Siege.dat";
+        try
+        {
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    // Lade Zeilen
+                    string[] parts1 = line.Split(',');
+                    Player_win1 = Convert.ToInt32(parts1[1]);
+                    Player_win2 = Convert.ToInt32(parts1[3]);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                writer.WriteLine("Wins from Player1," + Player_win1 + ',');
+                writer.WriteLine("Wins from Player2," + Player_win2 + ',');
+            }
         }
     }
     private static void TryWin(int player)
@@ -143,6 +176,7 @@
             Winn = false;
             Console.ReadLine();
             RenewField();
+            SaveAndLoad();
         }
     }
 
@@ -170,6 +204,7 @@
             for (int j = 0; j < 7; j++)
             {
                 Console.Write(Field[i, j]);
+                Console.Write(' ');
             }
             Console.WriteLine();
         }
